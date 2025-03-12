@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/pagina.css">
-    <!-- <tittle>Puerta del Diablo - El Salvador</tittle> -->
-</head>
+    <link rel="stylesheet" href="pagina.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Cookie&family=Gabriela&family=Indie+Flower&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Pattaya&family=Poiret+One&family=Rancho&display=swap" rel="stylesheet"></head>
 
 <body>
     <header>
@@ -23,8 +22,8 @@
 
     <section class="hero">
         <div class="heroSection">
-            <h1>La Puerta del Diablo</h1>
-            <p>Descubre la leyenda y la majestuosidad de este lugar </p>
+            <h1>La  Puerta  del  Diablo</h1>
+            <p class="inicio">Descubre la leyenda y la majestuosidad de este lugar </p>
             <a href="#historia">
                 <button>Explora más</button>
             </a>
@@ -32,7 +31,7 @@
     </section>
 
     <section id="historia">
-        <img src="./img/peñas.png" />
+        <img src="peñas.png" />
         <div>
             <h2>Historia y Leyenda</h2>
             <p>La Puerta del Diablo es un sitio turístico en El Salvador famoso por su impresionante vista y su historia
@@ -51,27 +50,55 @@
         </div>
     </section>
 
-    <section id="actividades">
-        <h2>Actividades</h2>
-        <ul>
-            <li>Senderismo</li>
-            <li>Escalada</li>
-            <li>Fotografía</li>
-            <li>Miradores</li>
-        </ul>
-    </section>
-
     <section id="galeria">
         <h2>Galería</h2>
         <div class="imagenes">
-            <img src="./img/fondo.jpg" alt="Vista de La Puerta del Diablo" class="img1" />
-            <img src="./img/atardecer.png" alt="Atardecer en La Puerta del Diablo" class="img2" />
-            <img src="./img/cueva.jpg" alt="cueva la puerta del diablo" class="img3" />
-            <img src="./img/estructura.jpg" alt="nueva estructura puerta del diablo" class="img4" />
-            <img src="./img/vista_aerea.jpg" alt="vista aerea puerta del diablo" class="img5" />
+            <img src="fondo.jpg" alt="Vista de La Puerta del Diablo" class="img1" />
+            <img src="atardecer.png" alt="Atardecer en La Puerta del Diablo" class="img2" />
+            <img src="cueva.jpg" alt="cueva la puerta del diablo" class="img3" />
+            <img src="estructura.jpg" alt="nueva estructura puerta del diablo" class="img4" />
+            <img src="vista_aerea.jpg" alt="vista aerea puerta del diablo" class="img5" />
         </div>
     </section>
 
+    <section id="actividades">
+        <h2 class="acti">Actividades</h2>
+        <div class="actividad-container">
+            <div class="actividad">
+                <a href="sende.html" target="contenido-pagina">
+                    <img src="hiker.jpg" alt="Senderismo">
+                    <h3>Senderismo</h3>
+                </a>
+            </div>
+            <div class="actividad">
+                <a href="escalada.html" target="contenido-pagina">
+                    <img src="escalada.jpg" alt="Escalada">
+                    <h3>Escalada</h3>
+                </a>
+            </div>
+            <div class="actividad">
+                <a href="fotografiar.html" target="contenido-pagina">
+                    <img src="fotografiar.jpg" alt="Fotografía">
+                    <h3>Fotografía</h3>
+                </a>
+            </div>
+            <div class="actividad">
+                <a href="miradores.html" target="contenido-pagina">
+                    <img src="miradores.jpg" alt="Miradores">
+                    <h3>Miradores</h3>
+                </a>
+            </div>
+        </div>
+    
+        <!-- Aquí se carga la página seleccionada dentro del iframe -->
+        <div id="contenido-pagina">
+            <iframe name="contenido-pagina" src="" width="100%" height="600px"></iframe>
+        </div>
+    </section>
+    
+    
+    
+    
     <section id="ubicacion">
         <div>
             <h2>Ubicación</h2>
@@ -82,11 +109,19 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
+    
 
     <section id="contacto">
         <h2>Contacto</h2>
         <p>Para más información, síguenos en redes sociales o contáctanos.</p>
     </section>
+
+    <footer>
+        <p>&copy; 2025 La Puerta del Diablo</p>
+    </footer>
+</body>
+
+</html>
 
     <footer>
         <p>&copy; 2025 La Puerta del Diablo</p>
