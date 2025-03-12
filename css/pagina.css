@@ -2,7 +2,7 @@ body {
     background-color: #dcefe3;
     font-family: Arial, sans-serif;
     margin: 0;
-    background-image: url("../img/topography.svg");
+    background-image: url("topography.svg");
 
 
 }
@@ -16,19 +16,36 @@ header {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 150px;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-family: "Poiret One", sans-serif;
+        text-align: center;
+       margin: auto;
+        
+        color: white;
+      
+      }
+      .inicio{
+        text-align: center;
+      }
+p{
+    font-family: "Rancho", cursive;
+  font-size: 25px;
+  font-style: normal;
 }
+
 
 .hero {
     height: 100dvh;
-    background: center/cover url("../img/hero.png") no-repeat;
+    background: center/cover url("hero.png") no-repeat;
     color: white;
     background-attachment: fixed;
 }
 
 .heroSection {
-    text-align: justify;
+    text-align: center;
     padding: 180px 0px 0px 180px;
+    font-size: 100px;
 
 }
 
@@ -43,6 +60,9 @@ button {
 #historia {
     display: flex;
     margin: 30px 70px;
+    background-color: #2b7053;
+    color: white;
+    border-radius: 15px;
 }
 
 #historia div {
@@ -60,7 +80,94 @@ button {
 #galeria {
     text-align: center;
     margin: 30px;
+    background-color: #2b7053;
+    color: white;
+    border-radius: 15px;
 }
+#actividades{
+    text-align: center;
+    background-color: #3d8c6aa1;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    margin: 30px 70px;
+    border-radius: 15px;
+}
+#actividades {
+    text-align: center;
+    padding: 20px;
+    background-color: #2b7053; 
+    color: white;
+    flex-direction: column;
+}
+
+.actividad-container {
+    display: flex;
+    justify-content: space-between; /* Distribuye las tarjetas horizontalmente */
+    gap: 30px;
+    padding: 100px;
+}
+
+.actividad {
+    flex: 2.1; /* las tarjetas tengan el mismo tamaño */
+    background-color: #3d8c6a;
+    padding: 35px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    margin: 20px;
+    text-align: center;
+}
+
+.actividad img {
+    width: 100%; /* La img cubre todo el contein*/
+    height: 375px; /* Altura fija  */
+    object-fit: cover; /* pa que no se deformen */
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.actividad h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+.actividad p{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.actividad:hover {
+    transform: scale(1.05);
+    background-color: #004D40;
+}
+
+a {
+    color: #ffffff; /* El color de los enlaces será rojo */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+/* Cuando el usuario pasa el ratón sobre el enlace, cambia el color */
+a:hover {
+    color: #4DB6AC; /* Cambia el color a verde al pasar el mouse */
+} 
+    
+nav span a{
+    background-color: #3d8c6a;
+    border-right: 1px solid;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    margin: 50px;
+}
+nav span a:hover{
+    background-color: #4DB6AC;
+}
+nav span a {
+    background-color: #3d8c6a;
+    text-align: center;
+}
+
 
 .imagenes {
     display: grid;
@@ -75,22 +182,25 @@ button {
     width: 495px;
     height: 498px;
     border-radius: 15px;
+    margin: 20px;
 }
 
 .img2 {
     grid-row: span 4 / span 4;
-    width: 495px;
+    width: 475px;
     height: 243px;
     border-radius: 15px;
+    margin: 20px;
 }
 
 .img3 {
     grid-row: span 4 / span 4;
     grid-column-start: 2;
     grid-row-start: 5;
-    width: 495px;
+    width: 475px;
     height: 243px;
     border-radius: 15px;
+    margin: 20px;
 }
 
 .img4 {
@@ -100,6 +210,7 @@ button {
     width: 370px;
     height: 243px;
     border-radius: 15px;
+    margin: 20px;
 }
 
 .img5 {
@@ -109,6 +220,7 @@ button {
     width: 370px;
     height: 243px;
     border-radius: 15px;
+    margin: 20px;
 }
 
 #ubicacion {
@@ -140,6 +252,12 @@ nav ul li a {
     font-weight: bold;
 }
 
+footer {
+    text-align: center;
+    padding: 10px;
+    /* background: #333; */
+    color: white;
+}
 footer {
     text-align: center;
     padding: 10px;
